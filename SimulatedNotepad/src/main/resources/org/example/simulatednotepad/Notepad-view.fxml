@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.simulatednotepad.NotepadController">
+   <children>
+      <MenuBar prefHeight="33.0" prefWidth="730.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="newfile" mnemonicParsing="false" onAction="#Newfile" text="New file" />
+                  <MenuItem fx:id="open" mnemonicParsing="false" onAction="#Open" text="Open" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" onAction="#Save" text="Save" />
+                  <MenuItem fx:id="saveas" mnemonicParsing="false" onAction="#Saveas" text="Save As" />
+                  <MenuItem fx:id="close" mnemonicParsing="false" onAction="#Close" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="text" prefHeight="534.0" prefWidth="730.0" />
+   </children>
+</VBox>
