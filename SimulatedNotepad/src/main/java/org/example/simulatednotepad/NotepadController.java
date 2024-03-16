@@ -67,9 +67,9 @@ public class NotepadController {
             FileChooser.ExtensionFilter stylefile1= new FileChooser.ExtensionFilter("Text documents(*.txt)","*.txt");
             FileChooser.ExtensionFilter stylefile2=new FileChooser.ExtensionFilter("All files","*.*");
             fileChooser.getExtensionFilters().addAll(stylefile1,stylefile2);
-            stage = (Stage) pane.getScene().getWindow(); // Lấy stage hiện tại
+            stage = (Stage) pane.getScene().getWindow(); 
 
-            File filesave = fileChooser.showSaveDialog(stage); // Truyền stage cho hộp thoại lưu
+            File filesave = fileChooser.showSaveDialog(stage); 
 
             if(filesave!=null){
                 try {
